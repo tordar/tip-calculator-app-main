@@ -1,0 +1,100 @@
+body {
+    background-color:  hsl(186, 100%, 88%);
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+}
+
+.logo {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    height: 25%;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    max-width: 70%;
+    height: 60%;
+    display: grid;
+    margin-left: 15%;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    font-weight: 400;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.stretchedInput {
+    width: 80%;
+    height: 35px;
+    font-size:x-large;
+}
+
+.tipButtons{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    width: 90%;
+}
+
+.tip {
+    margin: 5%;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.tipButtons input {
+    background-color: hsl(185, 41%, 84%);
+}
+
+
+.numberPeople{
+}
+
+input{
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 8px;
+    border: none;
+    text-align:right;
+}
+
+
+/* Output field */
+.output{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.tipHeader {
+    color: white;
+}
+
+.tipSub {
+    color: hsl(186, 14%, 43%);
+}
+
+.tipAmount {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.resetButton {
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    background-color: hsl(186, 14%, 43%);
+    border-radius: 8px;
+    font-size: larger;
+}
