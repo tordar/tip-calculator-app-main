@@ -90,6 +90,10 @@ input{
     grid-template-columns: 2fr 1fr;
 }
 
+.tipAmount h1 {
+    color: hsl(185, 41%, 84%);
+}
+
 .resetButton {
     width: 100%;
     margin-top: 30px;
