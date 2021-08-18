@@ -10,6 +10,7 @@ const custom = document.getElementById('custom')
 const numPeople = document.getElementById('numPeople')
 const finalTipPerson = document.getElementById('finalTipPerson')
 const totalPricePerson = document.getElementById('finalTipTotal')
+const resetButton = document.getElementById('reset')
 
 
 let billAmount = 0
@@ -22,21 +23,32 @@ let finalTipPerPerson = 0
 totalBill.addEventListener('change', () => {
     billAmount = totalBill.value
     console.log(billAmount)
+
     custom.addEventListener('change', () => {
         tipAmount = custom.value
         console.log(tipAmount)
     })
+
+    document.querySelectorAll('.tip').forEach(item => {
+        item.addEventListener('click', ()=>{
+            tipAmount = item.value
+            console.log(tipAmount)
+        })
+    })
         numPeople.addEventListener('change', () => {
             numberOfPeople = numPeople.value
             console.log(numberOfPeople)
-
-            finalTipPerPerson = (billAmount / 100) * (tipAmount / numberOfPeople)
-            finalTipPerson.innerHTML = finalTipPerPerson
-            totalPricePerson.innerHTML = finalTipPerPerson + (billAmount / numberOfPeople)
+                finalTipPerPerson = (billAmount / 100) * (tipAmount / numberOfPeople)
+                finalTipPerson.innerHTML = finalTipPerPerson
+                totalPricePerson.innerHTML = finalTipPerPerson + (billAmount / numberOfPeople)
+            })
+   
         })
+
+resetButton.addEventListener('click', () => {
+    finalTipPerson.innerHTML = '0.00'
+    totalPricePerson.innerHTML = '0.00'
 })
-
-
 
 
 
