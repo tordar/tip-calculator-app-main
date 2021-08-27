@@ -70,15 +70,12 @@ body {
     background-color: hsl(185, 41%, 84%);
 }
 
-
-
 input{
     background-color: hsl(185, 41%, 84%);
     border-radius: 8px;
     border: none;
     text-align:right;
 }
-
 
 /* Output field */
 .output{
